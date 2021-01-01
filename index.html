@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Job Feed</title>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <!--Favicon-->        
+<link rel="icon" href="img/favicon.ico">
+     <!--Stylesheet-->        
+<link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+    
+    <!--Header Menu-->
+    <header class="menu" id="top">
+        <!--Menu Content Container-->
+        <div class="menu_content">
+            <a href="https://www.upwork.com"><img src="img/upwork-logo-png-transparent.png" alt="logo"></a>
+            <!--Menu Search Bar-->
+            <div class="menu_search">
+                <form action="search" class="menu_form">
+                    <label for="search_icon">
+                        <i class="fa fa-search"></i>
+                    </label>
+                    <select name="search_icon" id="search_icon">
+                        <option selected disabled value>A</option>
+                        <option value="Talents">Talent</option>
+                        <option value="Projects">Projects</option>
+                        <option value="Jobs">Jobs</option>
+                    </select>
+                    <input class="input_search" type="text" name="menu_search" id="menu_search" placeholder=" Search">
+                </form>
+            </div>
+            <!--1st Menu-->
+            <ul class="menu_1">
+                <li><a href="#" class="active">Find Work</a></li>
+                <li><a href="#">My Jobs</a></li>
+                <li><a href="#">Report</a></li>
+                <li><a href="#">Messages</a></li>
+            </ul>
+            <!--Second Menu-->
+            <ul class="menu_2">
+                <a href="#">
+                    <div class="menu_icon">
+                        <i class="menu_icon--1 fa fa-envelope"></i>
+                        <span class="menu_span--1"></span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="menu_icon">
+                        <i class="menu_icon--2 fa fa-bell"></i>
+                        <span class="menu_span--2"></span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="menu_icon">
+                        <i class="menu_icon--3 fa fa-paper-plane"></i>
+                        <span class="menu_span--3"></span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="menu_icon">
+                        <img src="img/customer-1.jpg" alt="User Image" class="menu_icon--img">
+                    </div>
+                </a>
+            </ul>
+        </div>
+    </header>
+    <!--Main Content Container-->
+    <section class="container">
+        <!--Left Sidebar-->
+        <div class="sidebar_left">
+            <div class="side_hero">
+                <h1>Find Work</h1>
+            </div>
+            <div class="sidebar_left_hero mt-largest">
+                <div class="sidebar_left_content--feed">
+                    <div class="heading_secondary">&nbsp;</div>
+                    <h4>My Feed</h4>
+                </div>
+                <div class="sidebar_left_content_data">
+                    <div class="sidebar_left_content_data-main"><p>Best Matches</p> <div class="btn">&nbsp;</div>
+                    </div>
+                    <p>Recommended</p>
+                </div>
+                <div class="sidebar_left_content_searches">
+                    <h4>Recent Searches</h4>
+                    <div class="sidebar_left_content_searches-main">
+                        <p>Android development</p>
+                        <p>PSD to HTML</p>
+                        <p>PSD attached</p>
+                        <p>CSS</p>
+                        <p>Angular</p>
+                    </div>
+                </div>
+                <div class="sidebar_left_content_category">
+                    <h4>My Category</h4>
+                    <div class="sidebar_left_content_category-main">
+                        <p>Web Development</p>
+                        <p>QA & Testing</p>
+                        <p>Mobile Development</p>
+                        <p>Ecomerce Developmet</p>
+                        <p>Web & Mobile Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Center Content-->
+        <div class="center_content">
+            <div class="top_content">
+                <!--Main Big Search Bar-->
+                <form action="search" class="main_search">
+                    <input type="text">
+                    <button type="submit" id="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <!--Advance Button-->
+                <button class="btn-advance">Advanced Search</button>
+            </div>
+            <div class="real_content mt-large">
+                  <!--New JObs Button-->
+                  <button class="new_jobs">
+                      There are new jobs. Click to see them.
+                  </button>
+            <!--JObs Content-->
+            <div class="jobs_content">
+                <!--My feed-->
+                <div class="job_feed">
+                    <div class="job_feed_hero">
+                        <h2>My Feed</h2>
+                   </div>
+                </div> 
+                <!--Main Job Posting Area-->
+                <div class="job_feed">
+                    <div class="job_feed_content">
+                    <div class="job_feed_content_data">
+                        <div class="job_feed_content_data--head">
+                           <h4>Larawel website redesign.</h4>
+                           <div class="reaction">
+                           <div class="like">
+                               <i class="fa fa-heart"></i>
+                           </div>
+                           <div class="dislike">
+                               <i class="fa fa-thumbs-down"></i>
+                           </div>
+                        </div>
+                        </div>
+                        <div class="job_feed_content_data--detail">
+                        <h5 class="hour">Hourly: $12.00-$25.00</h5>  
+                        <p class="level"> - Intermediate</p>
+                        <p class="time">Est: Less then 1 month,30+ hours/week-</p>    
+                        </div>
+                        <div class="job_feed_content_data--time">
+                            <p>Posted 1 hour ago</p>
+                        </div>
+                        <div class="job_feed_content_data--desc">
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, dignissimos! Facilis voluptates sed ad saepe.</p>
+                        </div>
+                        <div class="job_feed_content_data--skills">
+                           <p>PHP</p>
+                           <p>HTML</p>
+                           <p>CSS</p>
+                           <p>PYTHON</p>
+                           <p>JAVASCRIPT</p>
+                        </div>
+                        <div class="job_feed_content_data--proposals">
+                               <p>Proposals: <span>  20 To 50</span></p>
+                        </div>
+                        <div class="job_feed_content_data--ratings">
+                          <div class="check">
+                            <i class="fa fa-check"></i>
+                          </div> 
+                           <p>Payment Verified</p>
+                           <div class="stars">
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                           </div>
+                           <p><span>2k+</span> Spent</p>
+                           <div class="location">
+                               <i class="fa fa-map-pin"></i>
+                               <p>Pakistan</p>
+                           </div>
+                        </div>
+                    </div>    
+                    </div>
+
+
+                    <div class="job_feed_content">
+                        <div class="job_feed_content_data">
+                            <div class="job_feed_content_data--head">
+                               <h4>Logo design for youtube channel.</h4>
+                               <div class="reaction">
+                               <div class="like">
+                                   <i class="fa fa-heart"></i>
+                               </div>
+                               <div class="dislike">
+                                   <i class="fa fa-thumbs-down"></i>
+                               </div>
+                            </div>
+                            </div>
+                            <div class="job_feed_content_data--detail">
+                            <h5 class="hour">Hourly: $22.00-$25.00</h5>  
+                            <p class="level"> - Expert</p>
+                            <p class="time">Est: Less then 2 month,30+ hours/week-</p>    
+                            </div>
+                            <div class="job_feed_content_data--time">
+                                <p>Posted 2 hours ago</p>
+                            </div>
+                            <div class="job_feed_content_data--desc">
+                               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, dignissimos! Facilis voluptates sed ad saepe.</p>
+                            </div>
+                            <div class="job_feed_content_data--skills">
+                               <p>PHP</p>
+                               <p>WORDPRESS</p>
+                               <p>C++</p>
+                               <p>PYTHON</p>
+                               <p>JAVASCRIPT</p>
+                            </div>
+                            <div class="job_feed_content_data--proposals">
+                                   <p>Proposals: <span>  Less then 5</span></p>
+                            </div>
+                            <div class="job_feed_content_data--ratings">
+                              <div class="check">
+                                <i class="fa fa-check"></i>
+                              </div> 
+                               <p>Payment Verified</p>
+                               <div class="stars">
+                                   <i class="fa fa-star"></i>
+                                   <i class="fa fa-star"></i>
+                                   <i class="fa fa-star"></i>
+                                   <i class="fa fa-star"></i>
+                                   <i class="fa fa-star"></i>
+                               </div>
+                               <p><span>12k+</span> Spent</p>
+                               <div class="location">
+                                   <i class="fa fa-map-pin"></i>
+                                   <p>United Kingdom</p>
+                               </div>
+    
+                            </div>
+                        </div>    
+                        </div>
+
+
+                        <div class="job_feed_content">
+                            <div class="job_feed_content_data">
+                                <div class="job_feed_content_data--head">
+                                   <h4>Larawel website redesign.</h4>
+                                   <div class="reaction">
+                                   <div class="like">
+                                       <i class="fa fa-heart"></i>
+                                   </div>
+                                   <div class="dislike">
+                                       <i class="fa fa-thumbs-down"></i>
+                                   </div>
+                                </div>
+                                </div>
+                                <div class="job_feed_content_data--detail">
+                                <h5 class="hour">Hourly: $12.00-$25.00</h5>  
+                                <p class="level"> - Intermediate</p>
+                                <p class="time">Est: Less then 1 month,30+ hours/week-</p>    
+                                </div>
+                                <div class="job_feed_content_data--time">
+                                    <p>Posted 1 hour ago</p>
+                                </div>
+                                <div class="job_feed_content_data--desc">
+                                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, dignissimos! Facilis voluptates sed ad saepe.</p>
+                                </div>
+                                <div class="job_feed_content_data--skills">
+                                   <p>PHP</p>
+                                   <p>HTML</p>
+                                   <p>CSS</p>
+                                   <p>PYTHON</p>
+                                   <p>JAVASCRIPT</p>
+                                </div>
+                                <div class="job_feed_content_data--proposals">
+                                       <p>Proposals: <span>  20 To 50</span></p>
+                                </div>
+                                <div class="job_feed_content_data--ratings">
+                                  <div class="check">
+                                    <i class="fa fa-check"></i>
+                                  </div> 
+                                   <p>Payment Verified</p>
+                                   <div class="stars">
+                                       <i class="fa fa-star"></i>
+                                       <i class="fa fa-star"></i>
+                                       <i class="fa fa-star"></i>
+                                       <i class="fa fa-star"></i>
+                                       <i class="fa fa-star"></i>
+                                   </div>
+                                   <p><span>2k+</span> Spent</p>
+                                   <div class="location">
+                                       <i class="fa fa-map-pin"></i>
+                                       <p>Pakistan</p>
+                                   </div>
+        
+                                </div>
+                            </div>    
+                            </div>
+
+                            
+                            <div class="job_feed_content">
+                                <div class="job_feed_content_data">
+                                    <div class="job_feed_content_data--head">
+                                       <h4>Larawel website redesign.</h4>
+                                       <div class="reaction">
+                                       <div class="like">
+                                           <i class="fa fa-heart"></i>
+                                       </div>
+                                       <div class="dislike">
+                                           <i class="fa fa-thumbs-down"></i>
+                                       </div>
+                                    </div>
+                                    </div>
+                                    <div class="job_feed_content_data--detail">
+                                    <h5 class="hour">Hourly: $12.00-$25.00</h5>  
+                                    <p class="level"> - Intermediate</p>
+                                    <p class="time">Est: Less then 1 month,30+ hours/week-</p>    
+                                    </div>
+                                    <div class="job_feed_content_data--time">
+                                        <p>Posted 1 hour ago</p>
+                                    </div>
+                                    <div class="job_feed_content_data--desc">
+                                       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, dignissimos! Facilis voluptates sed ad saepe.</p>
+                                    </div>
+                                    <div class="job_feed_content_data--skills">
+                                       <p>PHP</p>
+                                       <p>HTML</p>
+                                       <p>CSS</p>
+                                       <p>PYTHON</p>
+                                       <p>JAVASCRIPT</p>
+                                    </div>
+                                    <div class="job_feed_content_data--proposals">
+                                           <p>Proposals: <span>  20 To 50</span></p>
+                                    </div>
+                                    <div class="job_feed_content_data--ratings">
+                                      <div class="check">
+                                        <i class="fa fa-check"></i>
+                                      </div> 
+                                       <p>Payment Verified</p>
+                                       <div class="stars">
+                                           <i class="fa fa-star"></i>
+                                           <i class="fa fa-star"></i>
+                                           <i class="fa fa-star"></i>
+                                           <i class="fa fa-star"></i>
+                                           <i class="fa fa-star"></i>
+                                       </div>
+                                       <p><span>2k+</span> Spent</p>
+                                       <div class="location">
+                                           <i class="fa fa-map-pin"></i>
+                                           <p>Pakistan</p>
+                                       </div>
+            
+                                    </div>
+                                </div>    
+                                </div>
+                           
+                                <div class="job_feed_button">
+                                  <button class="load_more">Load More Jobs</button>
+                                </div>
+                              
+                          
+
+
+
+                            
+                </div>
+                                <!--Main Job Posting Area   End-->
+                </div>
+        </div>
+        </div>
+        <!--Right Sidebar-->
+        <div class="sidebar_right">
+            <div class="sidebar_right_head mt-largest">
+                <img src="img/customer-1.jpg" alt="user">
+                <h5>My Profile</h5>
+            </div>
+            <div class="sidebar_right_content">
+                <div class="sidebar_right_content_visible">
+                    <h5>Visibility</h5>
+                    <div class="public">
+                    <i class="fa fa-globe"></i>
+                    <p>Public</p>
+                    <i class="fa fa-pen pen"></i>    
+                </div>
+                </div>
+                <div class="sidebar_right_content_available">
+                    <h5>Availablity</h5>
+                    <div class="available">
+                    <i class="fa fa-clock"></i>
+                    <p>As Needed open to offers</p>
+                    <i class="fa fa-pen pen"></i>
+                    </div>
+                    <div class="progress">
+                        <div class="done">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="sidebar_right_content_work">
+                    <i class="fa fa-plus"></i>
+                    <p>Add work history +55%</p>
+                </div>
+                <div class="sidebar_right_content_profile">
+                    <i class="fa fa-eye"></i>
+                    <p>View Profile</p>
+                </div>
+                <div class="sidebar_right_content_proposals">
+                    <h4>Proposals</h4>
+                    <p>46 available connects</p>
+                </div>
+                <div class="sidebar_right_content_track">
+                    <i class="fa fa-clock"></i>
+                    <p>Track time with the desktop app</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer_nav">
+    <div class="footer_nav_content">
+      <ul class="footer_nav_content--1">
+          <a href="#"><li>Aboout Us</li></a>
+            <a href="#"><li>Feedback</li></a>
+                <a href="#"><li>Community</li></a>
+      </ul>
+      <ul class="footer_nav_content--2">
+        <a href="#"><li>Trust,Safety and Security</li></a>
+            <a href="#"><li>Help and Support</li></a>
+                <a href="#"><li>Foundation</li></a>
+    </ul>
+    <ul class="footer_nav_content--3">
+        <a href="#"><li>Terms of Service</li></a>
+            <a href="#"><li>Privacy Policy</li></a>
+                <a href="#"><li>Accessiblity</li></a>
+    </ul>
+    <ul class="footer_nav_content--4">
+        <a href="#"><li>Desktop App</li></a>
+            <a href="#"><li>Cookie Policie</li></a>
+                <a href="#"><li>Enterprise Solutions</li></a>
+    </ul>
+    </div>
+    <div class="footer_nav_bottom">
+        <ul class="footer_nav_bottom--1">
+            <a href="#"><li><h6>Follow Us</h6></li></a>
+            <a href="#"><li><i class="fab fa-facebook"></i></li></a>
+                <a href="#"><li><i class="fab fa-twitter"></i></li></a>
+                    <a href="#"><li><i class="fab fa-instagram"></i></li></a>
+                        <a href="#"><li><i class="fab fa-pinterest"></i></li></a>
+                            <a href="#"><li><i class="fab fa-snapchat"></i></li></a>
+        </ul>
+        <ul class="footer_nav_bottom--2">
+                    <a href="#top" class="smooth-scroll"><li><h6>App</h6></li></a>
+                        <a href="#"><li><i class="fab fa-apple"></i></li></a>
+                            <a href="#"><li><i class="fab fa-android"></i></li></a>
+        </ul>
+    </div>
+      </div>            
+    </footer>
+    <a class="top smooth-scroll" href="#top"><i class="fa fa-angle-up"></i></a>
+    <!--Jquery-->
+    <script src="js/jquery-3.5.1.js"></script>
+    <!--Font Awesome-->
+    <script src="js/all.min.js"></script>
+    <!--Script Js-->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
