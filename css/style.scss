@@ -31,6 +31,29 @@ html {
     font-size: 56.5%;
   }
 }
+/* bottom right*/
+.ribbon-bottom-right {
+  bottom: -10px;
+  right: -10px;
+}
+.ribbon-bottom-right::before,
+.ribbon-bottom-right::after {
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+.ribbon-bottom-right::before {
+  bottom: 0;
+  left: 0;
+}
+.ribbon-bottom-right::after {
+  top: 0;
+  right: 0;
+}
+.ribbon-bottom-right span {
+  left: -25px;
+  bottom: 30px;
+  transform: rotate(-225deg);
+}
 body {
   box-sizing: border-box;
   position: relative;
@@ -89,6 +112,7 @@ h6 {
 ======================================*/
 .new_jobs {
   width: 100%;
+  position: relative;
   font-family: inherit;
   background-color: #fff;
   border: 1px solid #ccc;
@@ -110,6 +134,8 @@ h6 {
 .load_more {
   padding: 0.7rem 1.6rem;
   border-radius: 4px;
+  display: block;
+  margin: 0 auto;
   cursor: pointer;
   border: 0.5px solid #cccc;
   background-color: #fff;
@@ -135,6 +161,11 @@ h6 {
   color: #6fda44;
   background-color: #fff;
   box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 
 /*======================================
@@ -150,6 +181,9 @@ h6 {
     display: flex;
     flex-direction: row;
     align-items: center;
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+    }
     img {
       width: 12rem;
     }
@@ -334,6 +368,9 @@ h6 {
     text-align: left;
   }
   .center_content {
+    @media only screen and (max-width: $bp-medium) {
+      grid-row: 3 / 4;
+    }
     .btn-advance {
       float: left;
       border: none;
@@ -415,15 +452,20 @@ h6 {
           }
           &_button {
             padding: 2rem;
+            @media only screen and (max-width: $bp-medium) {
+              padding: 3rem;
+            }
           }
           &_content {
             padding: 1rem 2rem;
             cursor: pointer;
             color: #0e0f0f;
             border-bottom: 2px solid #eee;
-
             &:not(:nth-child(1 & 5)) {
               margin: 3rem 0;
+            }
+            @media only screen and (max-width: $bp-medium) {
+              padding: 4rem 3rem;
             }
             h2 {
               font-size: 2.4rem;
@@ -672,6 +714,9 @@ h6 {
   &_nav {
     width: 70%;
     margin: 5rem auto;
+    @media only screen and (max-width: $bp-medium) {
+      width: 90%;
+    }
     * {
       color: #fff;
       text-decoration: none;
