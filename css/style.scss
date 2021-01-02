@@ -6,6 +6,7 @@
 *::after {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   box-sizing: inherit;
 }
 /*======================================
@@ -55,6 +56,8 @@ html {
   transform: rotate(-225deg);
 }
 body {
+  width: 100%;
+  overflow-x: hidden;
   box-sizing: border-box;
   position: relative;
   background-color: #f1f2f4;
