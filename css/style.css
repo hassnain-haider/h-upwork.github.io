@@ -165,6 +165,8 @@ h6 {
                 Buttons
 ======================================*/
 .new_jobs {
+  display: block;
+  text-decoration: none;
   width: 100%;
   position: relative;
   font-family: inherit;
@@ -235,7 +237,6 @@ h6 {
   background-color: #1d4354;
   padding: 0;
   color: #fff;
-  display: none;
 }
 
 .menu_content {
